@@ -1,0 +1,89 @@
+@import "login.css";
+@import "todo.css";
+
+.hidden {
+  display: none;
+}
+html,
+body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Baloo Tammudu 1", "Noto Sans", sans-serif;
+}
+
+#backgroundImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+}
+
+#greeting,
+#clock,
+#quote,
+#author {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#greeting {
+  font-size: 6em;
+}
+
+#clock {
+  font-size: 5em;
+}
+
+#quote,
+#author {
+  font-size: 1.5em;
+}
+
+#quote {
+  margin: 0px 100px;
+}
+
+#author {
+  margin: 30px;
+}
+
+#photographer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#weather {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: large;
+  font-weight: 500;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}

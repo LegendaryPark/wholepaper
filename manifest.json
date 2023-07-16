@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Wholepaper",
+  "version": "0.0.1",
+  "description": "Wholepaper - boost your productivity",
+  "icons": {
+    "128": "images/icon-128.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "identity",
+    "https://www.googleapis.com/*",
+    "identity.email"
+  ],
+  "action": {
+    "default_icon": "images/icon-128.png",
+    "default_popup": "popup.html",
+    "default_title": "Wholepaper"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'"
+}
